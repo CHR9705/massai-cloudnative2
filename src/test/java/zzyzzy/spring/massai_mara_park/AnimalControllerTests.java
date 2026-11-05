@@ -27,6 +27,7 @@ class AnimalControllerTests {
                 .andExpect(jsonPath("$", hasSize(12)));
     }
 
+
     @Test
     void viewCountIncreasesByOne() throws Exception {
         mvc.perform(post("/animals/1/view"))
